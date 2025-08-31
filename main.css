@@ -34,7 +34,51 @@ div.main {
   background-image: url("https://www.rollingstone.com/wp-content/uploads/2018/06/rs-195859-74708441.jpg?w=1581&h=1054&crop=1");
   background-position: center;
   background-size: cover;
-  height: 690px;
+  height: 691px;
+  h1 {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+h1.tickets {
+  text-align: center;
+  padding: 20px;
+}
+
+div.main2 {
+  margin: 20px;
+  display: grid;
+  background-color: #bb2424;
+  grid-template-areas:
+    "head head"
+    "center center2"
+    "foot foot";
+  grid-template-columns: 1fr 3fr;
+  gap: 8px;
+  padding: 8px;
+  div {
+    background-color: white;
+    p {
+      padding: 10px;
+      font-size: 17px
+    }
+  }
+  div.head {
+    grid-area: head;
+  }
+  div.center {
+    grid-area: center;
+  }
+  div.center2{
+    grid-area: center2;
+  }
+  div.foot {
+    grid-area: foot;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -73,5 +117,9 @@ div.main {
   div.heading {
     padding-left: 5px;
     padding-right: 5px;
+  }
+
+  div.main2 {
+    margin: 10px;
   }
 }
