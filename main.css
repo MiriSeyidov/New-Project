@@ -2,6 +2,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
+  background-color: rgb(80, 0, 0);
 }
 div.heading {
   padding-left: 60px;
@@ -36,15 +37,19 @@ div.main {
   background-size: cover;
   height: 691px;
   h1 {
-    text-align: center;
+    text-align: left;
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
+    br {
+      display: none;
+    }
   }
 }
 
 h1.tickets {
+  color: rgb(138, 138, 138);
   text-align: center;
   padding: 20px;
 }
@@ -52,7 +57,7 @@ h1.tickets {
 div.main2 {
   margin: 20px;
   display: grid;
-  background-color: #bb2424;
+  background-color: rgb(138, 138, 138);
   grid-template-areas:
     "head head"
     "center center2"
@@ -61,8 +66,9 @@ div.main2 {
   gap: 8px;
   padding: 8px;
   div {
-    background-color: white;
+    background-color: rgb(227, 226, 226);
     p {
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       padding: 10px;
       font-size: 17px
     }
@@ -106,6 +112,9 @@ div.main2 {
       background-color: rgb(0, 0, 0);
     }
   }
+  div.main h1 {
+    left: 40%;
+  }
 }
 
 /* Extra small screens (phones) */
@@ -122,4 +131,12 @@ div.main2 {
   div.main2 {
     margin: 10px;
   }
+  div.main h1 {
+    font-size: 30px;
+    left: 27%;
+    br {
+      display: inline;
+    }
+  }
+
 }
